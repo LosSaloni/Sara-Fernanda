@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dra. Sara Fernanda | Fisioterapeuta Dermatofuncional</title>
+
+<meta name="description"
+content="Dra. Sara Fernanda - Fisioterapeuta Dermatofuncional">
+
+<style>
+
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #332d29;
+    background: #f5efe8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 78px;
+
+    background: rgba(39, 34, 30, 0.96);
+
+    z-index: 999;
+
+    border-bottom: 1px solid rgba(214, 176, 126, 0.35);
+}
+
+.nav {
+    max-width: 1200px;
+
+    height: 78px;
+
+    margin: auto;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+    color: #d9b27f;
+
+    font-size: 24px;
+
+    letter-spacing: 1px;
+}
+
+.logo span {
+    display: block;
+
+    color: #c8c0b9;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+
+    margin-top: 2px;
+}
+
+nav a {
+    color: #eee7df;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    margin-left: 28px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d9b27f;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 100vh;
+
+    padding-top: 78px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            #ead9c5 0%,
+            #ead9c5 10%,
+            transparent 35%
+        ),
+
+        #f4eee7;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+
+    width: 100%;
+
+    margin: auto;
+
+    padding: 70px 25px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.hero-text small {
+    font-family: Arial, sans-serif;
+
+    color: #a47643;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+.hero-text h1 {
+    font-size: clamp(48px, 6vw, 78px);
+
+    line-height: 1;
+
+    font-weight: normal;
+
+    color: #302a26;
+
+    margin: 20px 0;
+}
+
+.hero-text h1 span {
+    color: #a57949;
+
+    font-style: italic;
+}
+
+.hero-text p {
+    max-width: 500px;
+
+    color: #685f57;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 32px;
+}
+
+
+/* =====================================================
+   BOTÕES
+===================================================== */
+
+.button {
+    display: inline-block;
+
+    padding: 15px 27px;
+
+    border-radius: 3px;
+
+    background: #9d7040;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: .5px;
+
+    transition: .3s;
+
+    margin-right: 8px;
+
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background: #76522f;
+
+    transform: translateY(-2px);
+}
+
+.button-outline {
+    background: transparent;
+
+    border: 1px solid #9d7040;
+
+    color: #805b35;
+}
+
+.button-outline:hover {
+    background: #9d7040;
+
+    color: white;
+}
+
+
+/* =====================================================
+   FOTO
+===================================================== */
+
+.hero-photo {
+    display: flex;
+
+    justify-content: center;
+}
+
+.photo-frame {
+    width: 390px;
+
+    height: 510px;
+
+    position: relative;
+}
+
+.photo-frame::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    right: -18px;
+
+    bottom: -18px;
+
+    border: 1px solid #b48a5a;
+
+    border-radius: 190px 190px 10px 10px;
+}
+
+.photo-frame img {
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 190px 190px 10px 10px;
+
+    box-shadow:
+        0 25px 60px rgba(50, 35, 20, .25);
+}
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.section-title small {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+.section-title h2 {
+    font-size: 46px;
+
+    font-weight: normal;
+
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   SOBRE
+   FUNDO MARROM
+===================================================== */
+
+.about {
+    background: #40372f;
+
+    color: #eee4d9;
+
+    padding: 110px 25px;
+}
+
+.about .section-title small {
+    color: #d3a66f;
+}
+
+.about .section-title h2 {
+    color: #f4e9dc;
+}
+
+.about-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 34px;
+
+    font-weight: normal;
+
+    color: #d9b27f;
+
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    color: #d7cec5;
+
+    margin-bottom: 18px;
+}
+
+.about-box {
+    padding: 55px 40px;
+
+    text-align: center;
+
+    background: #51463c;
+
+    border: 1px solid #806a54;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.15);
+}
+
+.about-box .symbol {
+    color: #d9b27f;
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.about-box h3 {
+    color: #f3e6d8;
+
+    font-size: 27px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+.about-box p {
+    font-family: Arial, sans-serif;
+
+    color: #cfc4ba;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   TRATAMENTOS
+   FUNDO NUDE
+===================================================== */
+
+.services {
+    background: #d7c2aa;
+
+    padding: 110px 25px;
+}
+
+.services .section-title small {
+    color: #765432;
+}
+
+.services .section-title h2 {
+    color: #302923;
+}
+
+.cards {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background: #f8f2eb;
+
+    min-height: 235px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border: 1px solid #c0a487;
+
+    transition: .3s;
+
+    box-shadow:
+        0 10px 25px rgba(70,45,25,.08);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    background: #fffaf5;
+
+    box-shadow:
+        0 20px 40px rgba(70,45,25,.15);
+}
+
+.card-icon {
+    font-size: 31px;
+
+    color: #9c7042;
+
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #493b30;
+
+    font-size: 21px;
+
+    font-weight: normal;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #74675c;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   FRASE
+   FUNDO ESCURO
+===================================================== */
+
+.quote {
+    padding: 100px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #27231f,
+            #46392e
+        );
+
+    text-align: center;
+
+    color: white;
+
+    border-top: 1px solid #a47b4c;
+
+    border-bottom: 1px solid #a47b4c;
+}
+
+.quote .gold-line {
+    width: 60px;
+
+    height: 1px;
+
+    background: #d5ab77;
+
+    margin: 0 auto 30px;
+}
+
+.quote p {
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 32px;
+
+    line-height: 1.5;
+
+    font-style: italic;
+
+    color: #f1e4d4;
+}
+
+.quote small {
+    display: block;
+
+    color: #cda474;
+
+    font-family: Arial, sans-serif;
+
+    margin-top: 25px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   INSTAGRAM
+===================================================== */
+
+.instagram {
+    background: #f9f7f4;
+
+    padding: 110px 25px;
+
+    text-align: center;
+}
+
+.instagram .section-title small {
+    color: #9d7040;
+}
+
+.instagram .section-title h2 {
+    color: #332d28;
+}
+
+.instagram p {
+    color: #70675f;
+
+    font-family: Arial, sans-serif;
+
+    margin-bottom: 25px;
+}
+
+.instagram-link {
+    display: inline-block;
+
+    color: #8f6339;
+
+    font-size: 23px;
+
+    border-bottom: 1px solid #c6a57f;
+
+    padding-bottom: 5px;
+
+    transition: .3s;
+}
+
+.instagram-link:hover {
+    color: #b17c45;
+}
+
+
+/* =====================================================
+   CONTATO
+   VERDE OLIVA
+===================================================== */
+
+.contact {
+    background: #354139;
+
+    color: white;
+
+    padding: 110px 25px;
+}
+
+.contact-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.contact-info h2 {
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    font-weight: normal;
+
+    color: #f1e6d8;
+
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    max-width: 500px;
+
+    font-family: Arial, sans-serif;
+
+    color: #cbd0ca;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    font-family: Arial, sans-serif;
+
+    color: #ddd6cb;
+
+    margin: 15px 0;
+}
+
+.contact-box {
+    background: #f4eee7;
+
+    color: #40372f;
+
+    padding: 50px 35px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.20);
+}
+
+.contact-box h3 {
+    font-size: 28px;
+
+    font-weight: normal;
+
+    margin-bottom: 12px;
+}
+
+.contact-box p {
+    color: #746b63;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+footer {
+    background: #211e1b;
+
+    color: #aaa;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h3 {
+    color: #d5aa76;
+
+    font-size: 23px;
+
+    font-weight: normal;
+
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
+
+.whatsapp {
+    position: fixed;
+
+    right: 22px;
+
+    bottom: 22px;
+
+    width: 62px;
+
+    height: 62px;
+
+    border-radius: 50%;
+
+    background: #25D366;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 6px 25px rgba(0,0,0,.30);
+
+    z-index: 998;
+
+    transition: .3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+
+    background: #20b957;
+}
+
+
+/* =====================================================
+   RESPONSIVO
+===================================================== */
+
+@media (max-width: 800px) {
+
+    header {
+        height: 70px;
+    }
+
+    .nav {
+        height: 70px;
+
+        justify-content: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 70px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 60px;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 52px;
+    }
+
+    .photo-frame {
+        width: 280px;
+
+        height: 375px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 37px;
+    }
+
+    .quote p {
+        font-size: 24px;
+    }
+
+    .contact-info h2 {
+        font-size: 40px;
+    }
+
+}
+
+
+/* =====================================================
+   ANIMAÇÃO SUAVE
+===================================================== */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+.hero-text {
+    animation: aparecer 1s ease;
+}
+
+.hero-photo {
+    animation: aparecer 1.2s ease;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MENU
+===================================================== -->
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+
+Sara Fernanda
+
+<span>
+Fisioterapeuta Dermatofuncional
+</span>
+
+</div>
+
+
+<nav>
+
+<a href="#inicio">
+Início
+</a>
+
+<a href="#sobre">
+Sobre
+</a>
+
+<a href="#tratamentos">
+Tratamentos
+</a>
+
+<a href="#instagram">
+Instagram
+</a>
+
+<a href="#contato">
+Contato
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- =====================================================
+     INÍCIO
+===================================================== -->
+
+<section class="hero" id="inicio">
+
+<div class="hero-content">
+
+
+<div class="hero-text">
+
+<small>
+Fisioterapia Dermatofuncional
+</small>
+
+
+<h1>
+
+Cuidado que<br>
+
+valoriza sua
+
+<span>
+beleza.
+</span>
+
+</h1>
+
+
+<p>
+
+Um atendimento personalizado,
+pensado para cuidar da sua pele,
+do seu corpo e do seu bem-estar.
+
+</p>
+
+
+<!-- WHATSAPP -->
+
+<a
+class="button"
+href="https://wa.me/5515998057116?text=Ol%C3%A1%20Dra.%20Sara!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+target="_blank"
+>
+
+Agende sua avaliação
+
+</a>
+
+
+<a
+class="button button-outline"
+href="#sobre"
+>
+
+Conheça meu trabalho
+
+</a>
+
+</div>
+
+
+
+<!-- FOTO -->
+
+<div class="hero-photo">
+
+<div class="photo-frame">
+
+<img
+src="sara.png"
+alt="Dra. Sara Fernanda"
+>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SOBRE
+===================================================== -->
+
+<section class="about" id="sobre">
+
+<div class="section-title">
+
+<small>
+Conheça
+</small>
+
+<h2>
+Sobre a Dra. Sara
+</h2>
+
+</div>
+
+
+<div class="about-grid">
+
+
+<div class="about-text">
+
+<h3>
+
+Beleza, saúde e autoestima
+em equilíbrio.
+
+</h3>
+
+
+<p>
+
+Sou Sara Fernanda, fisioterapeuta
+dermatofuncional, apaixonada por cuidar
+de pessoas e contribuir para que cada
+paciente se sinta ainda melhor consigo mesma.
+
+</p>
+
+
+<p>
+
+Meu trabalho é baseado em um atendimento
+individualizado, respeitando as necessidades
+e objetivos de cada pessoa.
+
+</p>
+
+
+<p>
+
+Acredito que cuidar do corpo também é uma
+forma de cuidar da autoestima e do bem-estar.
+
+</p>
+
+</div>
+
+
+
+<div class="about-box">
+
+<div class="symbol">
+✦
+</div>
+
+<h3>
+Atendimento personalizado
+</h3>
+
+<p>
+
+Cada pessoa possui necessidades únicas.
+Por isso, cada atendimento é pensado
+de forma individual.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TRATAMENTOS
+===================================================== -->
+
+<section class="services" id="tratamentos">
+
+<div class="section-title">
+
+<small>
+Especialidades
+</small>
+
+<h2>
+Tratamentos
+</h2>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="card-icon">
+✧
+</div>
+
+<h3>
+Cuidados Faciais
+</h3>
+
+<p>
+
+Protocolos personalizados para
+cuidar da saúde e aparência da pele.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+♡
+</div>
+
+<h3>
+Tratamentos Corporais
+</h3>
+
+<p>
+
+Estratégias individualizadas voltadas
+ao cuidado e bem-estar corporal.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+✦
+</div>
+
+<h3>
+Dermatofuncional
+</h3>
+
+<p>
+
+Fisioterapia dermatofuncional com
+atendimento personalizado para cada paciente.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+❋
+</div>
+
+<h3>
+Estética e Bem-estar
+</h3>
+
+<p>
+
+Cuidados que unem estética,
+autoestima e qualidade de vida.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+◇
+</div>
+
+<h3>
+Avaliação Individual
+</h3>
+
+<p>
+
+Avaliação para entender suas necessidades
+e definir o melhor plano de cuidados.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="card-icon">
+☼
+</div>
+
+<h3>
+Autoestima
+</h3>
+
+<p>
+
+Um momento dedicado a você e ao cuidado
+com seu corpo e sua confiança.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FRASE
+===================================================== -->
+
+<section class="quote">
+
+<div class="gold-line"></div>
+
+<p>
+
+“Cuidar de si não é vaidade.
+É uma forma de reconhecer
+o seu próprio valor.”
+
+</p>
+
+<small>
+DRA. SARA FERNANDA
+</small>
+
+</section>
+
+
+
+<!-- =====================================================
+     INSTAGRAM
+===================================================== -->
+
+<section class="instagram" id="instagram">
+
+<div class="section-title">
+
+<small>
+Acompanhe
+</small>
+
+<h2>
+Meu Instagram
+</h2>
+
+</div>
+
+
+<p>
+
+Acompanhe meu trabalho, dicas e novidades
+através das redes sociais.
+
+</p>
+
+
+<a
+class="instagram-link"
+href="https://www.instagram.com/dra.sarafeernanda/"
+target="_blank"
+>
+
+@dra.sarafeernanda
+
+</a>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTATO
+===================================================== -->
+
+<section class="contact" id="contato">
+
+<div class="contact-grid">
+
+
+<div class="contact-info">
+
+<h2>
+
+Vamos cuidar<br>
+de você?
+
+</h2>
+
+
+<p>
+
+Entre em contato para saber mais sobre
+os tratamentos e agendar sua avaliação.
+
+</p>
+
+
+<div class="contact-item">
+✦ Atendimento personalizado
+</div>
+
+<div class="contact-item">
+✦ Avaliação individual
+</div>
+
+<div class="contact-item">
+✦ Fisioterapia Dermatofuncional
+</div>
+
+</div>
+
+
+
+<div class="contact-box">
+
+<h3>
+Agende sua avaliação
+</h3>
+
+
+<p>
+
+Clique abaixo e fale diretamente
+com a Dra. Sara pelo WhatsApp.
+
+</p>
+
+
+<a
+class="button"
+href="https://wa.me/5515998057116?text=Ol%C3%A1%20Dra.%20Sara!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+target="_blank"
+>
+
+Falar pelo WhatsApp
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RODAPÉ
+===================================================== -->
+
+<footer>
+
+<h3>
+Sara Fernanda
+</h3>
+
+<p>
+Fisioterapeuta Dermatofuncional
+</p>
+
+<p>
+© 2026 — Todos os direitos reservados.
+</p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BOTÃO WHATSAPP
+===================================================== -->
+
+<a
+class="whatsapp"
+href="https://wa.me/5515998057116?text=Ol%C3%A1%20Dra.%20Sara!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+target="_blank"
+title="WhatsApp da Dra. Sara"
+>
+
+WA
+
+</a>
+
+
+</body>
+
+</html>
