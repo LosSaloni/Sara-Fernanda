@@ -7,10 +7,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dra. Sara Fernanda | Fisioterapeuta</title>
+<title>Dra. Sara Fernanda | Fisioterapeuta Dermatofuncional</title>
 
 <meta name="description"
-content="Dra. Sara Fernanda - Fisioterapeuta. Atendimento em domicílio e sala.">
+content="Dra. Sara Fernanda - Fisioterapeuta Dermatofuncional. Atendimento em domicílio e sala.">
 
 <style>
 
@@ -30,7 +30,7 @@ html {
 
 body {
     font-family: Georgia, "Times New Roman", serif;
-    color: #29251f;
+    color: #332d29;
     background: #f5f4f1;
 }
 
@@ -38,18 +38,14 @@ a {
     text-decoration: none;
 }
 
-
-/* =====================================================
-   CORES
-===================================================== */
-
 :root {
-    --dourado: #c3a914;
-    --dourado-escuro: #a88f00;
-    --bege: #e8e1b8;
-    --creme: #f7f6f2;
-    --preto: #22201d;
-    --cinza: #68645e;
+    --dourado: #c2a713;
+    --dourado-escuro: #9e8800;
+    --dourado-claro: #e5dfb1;
+    --preto: #24221f;
+    --marrom: #3a352e;
+    --cinza: #6c675f;
+    --branco: #faf9f5;
 }
 
 
@@ -62,42 +58,49 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 78px;
 
-    background: rgba(34, 32, 29, 0.97);
+    background: rgba(35, 33, 30, 0.97);
 
     z-index: 999;
 
-    border-bottom: 1px solid rgba(195, 169, 20, .4);
+    border-bottom: 1px solid rgba(194, 167, 19, 0.4);
 }
 
 .nav {
     max-width: 1200px;
-    height: 75px;
+
+    height: 78px;
+
     margin: auto;
+
     padding: 0 25px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
 .logo {
     color: var(--dourado);
+
     font-size: 24px;
+
     letter-spacing: 1px;
 }
 
 .logo span {
     display: block;
 
-    color: #ddd9cf;
+    color: #d5d1c9;
 
     font-family: Arial, sans-serif;
 
     font-size: 8px;
 
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
 
     text-transform: uppercase;
 
@@ -105,7 +108,7 @@ header {
 }
 
 nav a {
-    color: #eee;
+    color: #eeeae3;
 
     font-family: Arial, sans-serif;
 
@@ -113,7 +116,7 @@ nav a {
 
     margin-left: 28px;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -128,13 +131,13 @@ nav a:hover {
 .hero {
     min-height: 100vh;
 
-    padding-top: 75px;
+    padding-top: 78px;
 
     background:
         radial-gradient(
-            circle at 80% 20%,
-            #e7dfb2 0%,
-            #e7dfb2 12%,
+            circle at 85% 15%,
+            #e8e2b9 0%,
+            #e8e2b9 12%,
             transparent 38%
         ),
 
@@ -164,33 +167,58 @@ nav a:hover {
 }
 
 .hero-text small {
-    display: inline-block;
-
-    color: #817000;
-
     font-family: Arial, sans-serif;
 
-    font-size: 12px;
+    color: var(--dourado-escuro);
+
+    font-size: 11px;
 
     font-weight: bold;
 
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 
     text-transform: uppercase;
+}
 
-    margin-bottom: 15px;
+
+/* =====================================================
+   AGENDA ABERTA
+===================================================== */
+
+.agenda-aberta {
+    display: inline-block;
+
+    background: var(--dourado-claro);
+
+    color: #27251f;
+
+    padding: 12px 35px;
+
+    margin: 18px 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    border-radius: 3px;
+
+    border-left: 5px solid var(--dourado);
 }
 
 .hero-text h1 {
-    font-size: clamp(48px, 6vw, 78px);
+    font-size: clamp(46px, 6vw, 76px);
 
     line-height: 1;
 
     font-weight: normal;
 
-    color: #24221f;
+    color: #302d29;
 
-    margin-bottom: 25px;
+    margin: 15px 0 25px;
 }
 
 .hero-text h1 span {
@@ -200,9 +228,9 @@ nav a:hover {
 }
 
 .hero-text p {
-    max-width: 520px;
+    max-width: 510px;
 
-    color: #625e57;
+    color: var(--cinza);
 
     font-family: Arial, sans-serif;
 
@@ -211,28 +239,6 @@ nav a:hover {
     line-height: 1.8;
 
     margin-bottom: 30px;
-}
-
-.agenda {
-    display: inline-block;
-
-    background: var(--dourado);
-
-    color: #1d1b17;
-
-    padding: 13px 28px;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 13px;
-
-    font-weight: bold;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 15px;
-
-    border-radius: 3px;
 }
 
 
@@ -249,7 +255,7 @@ nav a:hover {
 
     background: var(--dourado);
 
-    color: #1f1d18;
+    color: #24221d;
 
     font-family: Arial, sans-serif;
 
@@ -277,13 +283,13 @@ nav a:hover {
 
     border: 1px solid var(--dourado);
 
-    color: #665a00;
+    color: #756400;
 }
 
 .button-outline:hover {
     background: var(--dourado);
 
-    color: #1f1d18;
+    color: #24221d;
 }
 
 
@@ -322,7 +328,7 @@ nav a:hover {
 
     border-radius: 190px 190px 10px 10px;
 
-    opacity: .8;
+    opacity: .85;
 }
 
 .photo-frame img {
@@ -369,8 +375,6 @@ nav a:hover {
     font-weight: normal;
 
     margin-top: 10px;
-
-    color: #282520;
 }
 
 
@@ -379,15 +383,19 @@ nav a:hover {
 ===================================================== */
 
 .about {
-    background: #302e29;
+    background: var(--marrom);
 
-    color: #eee;
+    color: #eee4d9;
 
     padding: 110px 25px;
 }
 
+.about .section-title small {
+    color: var(--dourado);
+}
+
 .about .section-title h2 {
-    color: #f5f3ed;
+    color: #f4e9dc;
 }
 
 .about-grid {
@@ -421,9 +429,13 @@ nav a:hover {
 
     line-height: 1.9;
 
-    color: #d8d5ce;
+    color: #d7cec5;
 
     margin-bottom: 18px;
+}
+
+.about-text strong {
+    color: var(--dourado);
 }
 
 .about-box {
@@ -431,9 +443,9 @@ nav a:hover {
 
     text-align: center;
 
-    background: #3c3932;
+    background: #514a41;
 
-    border: 1px solid #6c642e;
+    border: 1px solid #81752e;
 
     box-shadow:
         0 20px 50px rgba(0,0,0,.15);
@@ -448,7 +460,7 @@ nav a:hover {
 }
 
 .about-box h3 {
-    color: #f3f0e7;
+    color: #f3e6d8;
 
     font-size: 27px;
 
@@ -460,11 +472,15 @@ nav a:hover {
 .about-box p {
     font-family: Arial, sans-serif;
 
-    color: #c9c5bb;
+    color: #cfc4ba;
 
     font-size: 13px;
 
     line-height: 1.7;
+}
+
+.about-box strong {
+    color: var(--dourado);
 }
 
 
@@ -473,13 +489,17 @@ nav a:hover {
 ===================================================== */
 
 .services {
-    background: #e9e7df;
+    background: #e8e6de;
 
     padding: 110px 25px;
 }
 
+.services .section-title small {
+    color: #786900;
+}
+
 .services .section-title h2 {
-    color: #2b2924;
+    color: #302923;
 }
 
 .cards {
@@ -491,37 +511,39 @@ nav a:hover {
 
     grid-template-columns: repeat(4, 1fr);
 
-    gap: 18px;
+    gap: 20px;
 }
 
 .card {
     background: #f8f7f3;
 
-    min-height: 210px;
+    min-height: 225px;
 
-    padding: 30px 20px;
+    padding: 35px 22px;
 
     text-align: center;
 
-    border: 1px solid #d4cc98;
+    border: 1px solid #cfc38b;
 
     transition: .3s;
 
     box-shadow:
-        0 10px 25px rgba(70,65,35,.08);
+        0 10px 25px rgba(70,65,25,.08);
 }
 
 .card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-8px);
+
+    background: #fffefb;
 
     border-color: var(--dourado);
 
     box-shadow:
-        0 20px 40px rgba(70,65,35,.15);
+        0 20px 40px rgba(70,65,25,.15);
 }
 
 .card-icon {
-    font-size: 30px;
+    font-size: 31px;
 
     color: var(--dourado-escuro);
 
@@ -529,9 +551,9 @@ nav a:hover {
 }
 
 .card h3 {
-    color: #39352e;
+    color: #493f35;
 
-    font-size: 19px;
+    font-size: 20px;
 
     font-weight: normal;
 
@@ -539,13 +561,13 @@ nav a:hover {
 }
 
 .card p {
-    color: #746f66;
+    color: #746b61;
 
     font-family: Arial, sans-serif;
 
     font-size: 12px;
 
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 
@@ -554,15 +576,19 @@ nav a:hover {
 ===================================================== */
 
 .location {
-    padding: 80px 25px;
+    background: var(--dourado-claro);
 
-    background: #ded5a1;
+    padding: 75px 25px;
 
     text-align: center;
+
+    border-top: 1px solid #cbbd70;
+
+    border-bottom: 1px solid #cbbd70;
 }
 
 .location h2 {
-    color: #27251f;
+    color: #2b2923;
 
     font-size: 42px;
 
@@ -572,7 +598,11 @@ nav a:hover {
 }
 
 .location p {
-    color: #575139;
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #5d573f;
 
     font-family: Arial, sans-serif;
 
@@ -592,8 +622,8 @@ nav a:hover {
     background:
         linear-gradient(
             135deg,
-            #24231f,
-            #39362d
+            #27241f,
+            #443d32
         );
 
     text-align: center;
@@ -626,7 +656,7 @@ nav a:hover {
 
     font-style: italic;
 
-    color: #f1eee5;
+    color: #f1e9d8;
 }
 
 .quote small {
@@ -647,15 +677,23 @@ nav a:hover {
 ===================================================== */
 
 .instagram {
-    background: #f8f7f3;
+    background: #f9f8f4;
 
     padding: 110px 25px;
 
     text-align: center;
 }
 
+.instagram .section-title small {
+    color: var(--dourado-escuro);
+}
+
+.instagram .section-title h2 {
+    color: #332d28;
+}
+
 .instagram p {
-    color: #706b63;
+    color: #70675f;
 
     font-family: Arial, sans-serif;
 
@@ -665,7 +703,7 @@ nav a:hover {
 .instagram-link {
     display: inline-block;
 
-    color: #766800;
+    color: #806f00;
 
     font-size: 23px;
 
@@ -686,7 +724,7 @@ nav a:hover {
 ===================================================== */
 
 .contact {
-    background: #302e29;
+    background: #37342d;
 
     color: white;
 
@@ -714,9 +752,13 @@ nav a:hover {
 
     font-weight: normal;
 
-    color: #f1eee5;
+    color: #f1e6d8;
 
     margin-bottom: 25px;
+}
+
+.contact-info h2 span {
+    color: var(--dourado);
 }
 
 .contact-info p {
@@ -724,7 +766,7 @@ nav a:hover {
 
     font-family: Arial, sans-serif;
 
-    color: #ccc9c0;
+    color: #cbd0ca;
 
     line-height: 1.8;
 
@@ -734,19 +776,21 @@ nav a:hover {
 .contact-item {
     font-family: Arial, sans-serif;
 
-    color: #ddd9d0;
+    color: #ddd6cb;
 
     margin: 15px 0;
 }
 
 .contact-item strong {
     color: var(--dourado);
+
+    margin-right: 5px;
 }
 
 .contact-box {
-    background: #f4f2e9;
+    background: #f4eee7;
 
-    color: #403c33;
+    color: #40372f;
 
     padding: 50px 35px;
 
@@ -765,11 +809,13 @@ nav a:hover {
 }
 
 .contact-box p {
-    color: #746f66;
+    color: #746b63;
 
     font-family: Arial, sans-serif;
 
     font-size: 13px;
+
+    line-height: 1.7;
 
     margin-bottom: 25px;
 }
@@ -780,7 +826,7 @@ nav a:hover {
 ===================================================== */
 
 footer {
-    background: #201f1c;
+    background: #211f1c;
 
     color: #aaa;
 
@@ -860,7 +906,7 @@ footer p {
    RESPONSIVO
 ===================================================== */
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
 
     .cards {
         grid-template-columns: repeat(2, 1fr);
@@ -904,6 +950,10 @@ footer p {
 
     .hero-text h1 {
         font-size: 52px;
+    }
+
+    .agenda-aberta {
+        font-size: 15px;
     }
 
     .photo-frame {
@@ -951,11 +1001,13 @@ footer p {
 
     from {
         opacity: 0;
+
         transform: translateY(20px);
     }
 
     to {
         opacity: 1;
+
         transform: translateY(0);
     }
 
@@ -987,10 +1039,10 @@ footer p {
 
 <div class="logo">
 
-Sara Fernanda
+Dra. Sara Fernanda
 
 <span>
-Fisioterapeuta
+Fisioterapeuta Dermatofuncional
 </span>
 
 </div>
@@ -998,15 +1050,25 @@ Fisioterapeuta
 
 <nav>
 
-<a href="#inicio">Início</a>
+<a href="#inicio">
+Início
+</a>
 
-<a href="#sobre">Sobre</a>
+<a href="#sobre">
+Sobre
+</a>
 
-<a href="#tratamentos">Tratamentos</a>
+<a href="#tratamentos">
+Tratamentos
+</a>
 
-<a href="#instagram">Instagram</a>
+<a href="#instagram">
+Instagram
+</a>
 
-<a href="#contato">Contato</a>
+<a href="#contato">
+Contato
+</a>
 
 </nav>
 
@@ -1028,22 +1090,23 @@ Fisioterapeuta
 <div class="hero-text">
 
 <small>
-Fisioterapeuta
+Fisioterapeuta Dermatofuncional
 </small>
 
-<div class="agenda">
-AGENDA ABERTA
+
+<div class="agenda-aberta">
+Agenda Aberta
 </div>
 
 
 <h1>
 
-Cuide de você<br>
+Cuidado que<br>
 
-com carinho e
+valoriza sua
 
 <span>
-bem-estar.
+beleza.
 </span>
 
 </h1>
@@ -1054,7 +1117,7 @@ bem-estar.
 Atendimento personalizado para cuidar
 do seu corpo, da sua pele e do seu
 bem-estar, respeitando as necessidades
-de cada paciente.
+e objetivos de cada paciente.
 
 </p>
 
@@ -1075,7 +1138,7 @@ class="button button-outline"
 href="#tratamentos"
 >
 
-Ver tratamentos
+Conheça os tratamentos
 
 </a>
 
@@ -1091,7 +1154,7 @@ Ver tratamentos
 
 <img
 src="sara.png"
-alt="Dra. Sara Fernanda - Fisioterapeuta"
+alt="Dra. Sara Fernanda - Fisioterapeuta Dermatofuncional"
 >
 
 </div>
@@ -1131,39 +1194,47 @@ Dra. Sara Fernanda
 
 <h3>
 
-Cuidado, saúde e
-bem-estar.
+Beleza, saúde e
+bem-estar em equilíbrio.
 
 </h3>
 
 
 <p>
 
-Sou Sara Fernanda, fisioterapeuta,
-e meu objetivo é oferecer um atendimento
-acolhedor, personalizado e pensado
-para as necessidades de cada paciente.
+Sou <strong>Sara Fernanda</strong>,
+fisioterapeuta dermatofuncional,
+apaixonada por cuidar de pessoas
+e contribuir para que cada paciente
+se sinta ainda melhor consigo mesma.
 
 </p>
 
 
 <p>
 
-Cada pessoa possui objetivos diferentes.
-Por isso, os procedimentos são realizados
-de forma individualizada, buscando
-proporcionar uma experiência de cuidado
-e bem-estar.
+Meu trabalho é baseado em um
+atendimento individualizado, respeitando
+as necessidades e objetivos de cada pessoa.
 
 </p>
 
 
 <p>
 
-Atendo em <strong>domicílio e sala</strong>,
-oferecendo praticidade e conforto para
-você escolher o atendimento que melhor
-combina com sua rotina.
+Acredito que cuidar do corpo, da pele
+e do bem-estar também é uma forma
+de cuidar da autoestima e da qualidade
+de vida.
+
+</p>
+
+
+<p>
+
+Os atendimentos são realizados em
+<strong>domicílio e sala</strong>, proporcionando
+mais praticidade e conforto.
 
 </p>
 
@@ -1178,20 +1249,20 @@ combina com sua rotina.
 </div>
 
 <h3>
-Agenda Aberta
+Fisioterapeuta Dermatofuncional
 </h3>
 
 <p>
 
-Agende seu horário e reserve um momento
-especial para cuidar de você.
+Atendimento personalizado, pensado
+para as necessidades de cada paciente.
 
 </p>
 
 <br>
 
 <strong>
-Domicílio e sala
+Agenda Aberta
 </strong>
 
 </div>
@@ -1236,8 +1307,10 @@ Drenagem linfática
 </h3>
 
 <p>
-Técnica voltada ao cuidado corporal
-e sensação de leveza e bem-estar.
+
+Técnica de massagem voltada ao cuidado
+corporal e à sensação de leveza e bem-estar.
+
 </p>
 
 </div>
@@ -1255,8 +1328,10 @@ Massagem modeladora
 </h3>
 
 <p>
+
 Massagem corporal realizada de forma
 personalizada conforme cada necessidade.
+
 </p>
 
 </div>
@@ -1274,8 +1349,10 @@ Enzimas
 </h3>
 
 <p>
+
 Procedimento realizado de acordo com
 avaliação e indicação profissional.
+
 </p>
 
 </div>
@@ -1293,8 +1370,10 @@ Botox
 </h3>
 
 <p>
-Procedimento estético realizado conforme
-avaliação e indicação adequada.
+
+Procedimento realizado conforme avaliação
+e indicação profissional.
+
 </p>
 
 </div>
@@ -1312,8 +1391,10 @@ Massagem relaxante
 </h3>
 
 <p>
-Um momento de cuidado para promover
-relaxamento e bem-estar.
+
+Um momento de cuidado destinado ao
+relaxamento e ao bem-estar.
+
 </p>
 
 </div>
@@ -1331,8 +1412,10 @@ Liberação miofascial
 </h3>
 
 <p>
-Técnica manual voltada ao cuidado
-da musculatura e mobilidade.
+
+Técnica manual voltada ao cuidado da
+musculatura, mobilidade e bem-estar.
+
 </p>
 
 </div>
@@ -1350,8 +1433,10 @@ Ventosa
 </h3>
 
 <p>
+
 Técnica utilizada de forma personalizada
 conforme avaliação profissional.
+
 </p>
 
 </div>
@@ -1369,8 +1454,10 @@ Limpeza de pele
 </h3>
 
 <p>
-Cuidados faciais para manter a pele
-mais limpa, saudável e bem cuidada.
+
+Cuidado facial para auxiliar na limpeza,
+saúde e aparência da pele.
+
 </p>
 
 </div>
@@ -1394,9 +1481,10 @@ Domicílio e sala
 
 <p>
 
-Você escolhe o local que combina melhor
-com a sua rotina: atendimento em domicílio
-ou atendimento em sala.
+Escolha a opção que melhor combina
+com sua rotina. Atendimento pensado
+para oferecer praticidade, conforto
+e cuidado personalizado.
 
 </p>
 
@@ -1414,8 +1502,9 @@ ou atendimento em sala.
 
 <p>
 
-“Cuidar de si também é uma forma
-de valorizar quem você é.”
+“Cuidar de si não é vaidade.
+É uma forma de reconhecer
+o seu próprio valor.”
 
 </p>
 
@@ -1448,8 +1537,9 @@ Meu Instagram
 
 <p>
 
-Acompanhe meu trabalho, procedimentos,
-dicas e novidades através das redes sociais.
+Acompanhe meu trabalho, dicas,
+procedimentos e novidades
+através das redes sociais.
 
 </p>
 
@@ -1482,7 +1572,8 @@ target="_blank"
 <h2>
 
 Agenda<br>
-aberta!
+
+<span>aberta!</span>
 
 </h2>
 
@@ -1490,22 +1581,25 @@ aberta!
 <p>
 
 Entre em contato para saber mais sobre
-os procedimentos e encontrar o melhor
-horário para o seu atendimento.
+os tratamentos, tirar suas dúvidas e
+agendar seu atendimento.
 
 </p>
 
 
 <div class="contact-item">
-<strong>✦</strong> Atendimento personalizado
+<strong>✦</strong>
+Fisioterapia Dermatofuncional
 </div>
 
 <div class="contact-item">
-<strong>✦</strong> Atendimento em domicílio e sala
+<strong>✦</strong>
+Atendimento personalizado
 </div>
 
 <div class="contact-item">
-<strong>✦</strong> Diversos procedimentos
+<strong>✦</strong>
+Domicílio e sala
 </div>
 
 </div>
@@ -1557,11 +1651,11 @@ Dra. Sara Fernanda
 </h3>
 
 <p>
-Fisioterapeuta
+Fisioterapeuta Dermatofuncional
 </p>
 
 <p>
-Domicílio e sala
+Atendimento em domicílio e sala
 </p>
 
 <p>
@@ -1571,6 +1665,10 @@ Domicílio e sala
 </footer>
 
 
+
+<!-- =====================================================
+     BOTÃO WHATSAPP
+===================================================== -->
 
 <a
 class="whatsapp"
